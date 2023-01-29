@@ -22,6 +22,9 @@ description:         Please see the README on GitHub at <https://github.com/gith
 dependencies:
 - base >= 4.7 && < 5
 - parsec
+- containers
+- mtl
+- transformers
 
 ghc-options:
 - -Wall
@@ -47,6 +50,9 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - LispKit-Lisp
+    when:        
+    - condition: false        
+      other-modules: Paths_LispKit_Lisp
 
 tests:
   LispKit-Lisp-test:
