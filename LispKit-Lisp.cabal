@@ -26,7 +26,10 @@ source-repository head
 library
   exposed-modules:
       Datatypes
-      Eval
+      Interpreter.Datatypes
+      Interpreter.Eval
+      Interpreter.Primitives
+      Interpreter.REPL
       Parser
   other-modules:
       Paths_LispKit_Lisp
